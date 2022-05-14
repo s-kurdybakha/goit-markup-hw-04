@@ -18,6 +18,14 @@
 
     /* border colors */
     --main-border-color: #ECECEC;
+    --second-border-color: #AFB1B8;
+    --accent-border-color: #2196F3;
+
+    /* icon-colors */
+    --main-icon-color: #AFB1B8;
+    --accent-icon-color: #2196F3;
+    
+    
    }   
 
 .body {
@@ -371,15 +379,93 @@ team-section
     margin-bottom: 16px;
 }
 
-/* socials-icon */
+/* 
+==========================
+clients-section
+==========================
+*/
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
 
-.socials {
+.clients-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.socials-item:not(last-child) {
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--second-border-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-border-color);
+    fill: var(--accent-icon-color);
+}
+
+/* .clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-border-color);
+    fill: var(--accent-icon-color);
+} */
+
+.clients-icon {
+    fill: var(--main-icon-color);
+}
+
+/* .clients-icon:hover,
+.clients-icon:focus {
+    color: var(--accent-icon-color)
+} */
+
+/* features-icon */
+    .features-icon-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: var(--secondary-bg-color);
+        margin-bottom: 30px;
+        padding: 25px 100px;
+        
+        
+    }
+
+    .features-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+       
+    }
+
+/* socials-icon */
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-item:not(:last-child) {
     margin-right: 10px;
 }
 
