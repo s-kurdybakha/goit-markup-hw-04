@@ -25,16 +25,30 @@
                     <li class="item"><a class="link nav-link" href="">Контакты</a></li>
                 </ul>                
             </nav>
-                <ul class="list header-contacts">
-                    <li class="header-email-item"><a class="link header-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="header-phone-item"><a class="link header-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <ul class="list header-list">
+                    <li class="header-item">
+                        <a class="link header-link" href="mailto:info@devstudio.com">
+                        <svg class="header-icon" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg> 
+                        info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-item">
+                        <a class="link header-link" href="tel:+380961111111">
+                        <svg class="header-icon" width="10" height="16">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg> 
+                        +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
         </div>
     </header>
 
     <main>
             <!-- hero-section -->
-            <section class="hero-section">
+            <section class="hero-section hero-overlay">
                 <div class="container">
                     <h1 class="hero-slogan">Эффективные решения <br> для вашего бизнеса</h1>
                     <button class="btn" type="button">Заказать услугу</button>
@@ -49,8 +63,8 @@
                     <h2 class="features-title visually-hidden">Особенности</h2>
                     <ul class="list features-list">
                         <li class="features-item">
-                            <div class="features-icon-section" weight="270" height="120">
-                                <svg class="features-icon" weight="70" height="70"  >
+                            <div class="features-icon-section">
+                                <svg class="features-icon" height="70">
                                     <use href="./images/sprite.svg#icon-antenna"></use>
                                 </svg>
                             </div>
@@ -59,8 +73,8 @@
                             <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
                         <li class="features-item">
-                            <div class="features-icon-section" weight="270" height="120">
-                                <svg class="features-icon" weight="70" height="70"  >
+                            <div class="features-icon-section">
+                                <svg class="features-icon" height="70">
                                     <use href="./images/sprite.svg#icon-clock"></use>
                                 </svg>
                             </div>
@@ -68,8 +82,8 @@
                             <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
                         <li class="features-item">
-                            <div class="features-icon-section" weight="270" height="120">
-                                <svg class="features-icon" weight="70" height="70"  >
+                            <div class="features-icon-section">
+                                <svg class="features-icon" height="70">
                                     <use href="./images/sprite.svg#icon-diagram"></use>
                                 </svg>
                             </div>
@@ -77,8 +91,8 @@
                             <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
                         <li class="features-item">
-                            <div class="features-icon-section" weight="270" height="120">
-                                <svg class="features-icon" weight="70" height="70"  >
+                            <div class="features-icon-section">
+                                <svg class="features-icon" height="70">
                                     <use href="./images/sprite.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
@@ -309,20 +323,59 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a class="link logo-footer" href="./index.html" lang="en">Web<span class="logo-style-footer">Studio</span></a>
-            <address class="footer-address">
-                <ul class="list footer-list">
-                    <li class="footer-item">
-                        <a class="link footer-address-map" href="https://goo.gl/maps/XeqfAgBL67WMoKfA7" target="_blank" rel="noopener nofollow">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="link footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="link footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+            
+            <div class="footer-container">
+                <div class="footer-address-block">
+                    <a class="link logo-footer" href="./index.html" lang="en">Web<span class="logo-style-footer">Studio</span></a>
+                    <address class="footer-address">
+                        <ul class="list footer-list">
+                            <li class="footer-item">
+                                <a class="link footer-address-map" href="https://goo.gl/maps/XeqfAgBL67WMoKfA7" target="_blank" rel="noopener nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="link footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="link footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="footer-socials">
+                    <p class="socials-text">присоединяйтесь</p>
+                    <ul class="footer-socials-list list">
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка instagram">
+                            <svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка twitter">
+                            <svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка facebook">
+                            <svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка linkedin">
+                            <svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>     
         </div>
     </footer>  
 </body>
